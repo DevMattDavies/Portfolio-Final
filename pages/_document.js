@@ -33,16 +33,9 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/PPNeueMontreal-Medium.otf"
+            href="/fonts/PPNeueMontreal-Light.otf"
             as="font"
             type="font/otf"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/FuturaPT-Light.ttf"
-            as="font"
-            type="font/ttf"
             crossOrigin="anonymous"
           />
         </Head>

@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
 @font-face {
   font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Medium.otf") format("otf");
+  src: url("/fonts/PPNeueMontreal-Light.otf") format("otf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -23,15 +23,8 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   overflow: hidden;
-
-  @media screen and (min-width: 420px) {
-  overflow: scroll;
-  height: auto;
-  }
-  
-
-  height: 100%;
-  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
 }
 
@@ -46,6 +39,7 @@ a {
   font-size: 1rem;
   padding: 0;
   margin: 0;
+  cursor: default;
 }
 
 `;

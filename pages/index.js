@@ -1,30 +1,43 @@
-import styled from "styled-components";
+import { useState } from "react";
+
+import {
+  PageContainer,
+  Background,
+  TitleAndMenuContainer,
+  AboutInfoContainer,
+} from "../components/Containers.styles";
 import BackgroundVideo from "../components/BackgroundVideo";
+import Menu from "../components/Menu";
 import TitleText from "../components/TitleText";
-
-const PageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2rem solid white;
-  height: 100vh;
-  width: 100vw;
-`;
-
-const Background = styled.div`
-  width: 100%;
-  height: 100%;
-  border: 0.8px solid black;
-  z-index: 1;
-  position: relative;
-`;
+import About from "../components/About";
 
 export default function Splash() {
+  const [isAboutChecked, setIsAboutChecked] = useState(false);
+  const [isTechstackChecked, setIsTechstackChecked] = useState(false);
+  const [isProjectsChecked, setIsProjectsChecked] = useState(false);
+
+  const menuState = {
+    isAboutChecked,
+    setIsAboutChecked,
+    isTechstackChecked,
+    setIsTechstackChecked,
+    isProjectsChecked,
+    setIsProjectsChecked,
+  };
+
   return (
     <PageContainer>
       <BackgroundVideo />
       <Background>
-        <TitleText />
+        <TitleAndMenuContainer>
+          <TitleText />
+          <Menu menuState={menuState} />
+        </TitleAndMenuContainer>
+        {isAboutChecked && (
+          <AboutInfoContainer>
+            <About isAboutChecked={isAboutChecked} />
+          </AboutInfoContainer>
+        )}
       </Background>
     </PageContainer>
   );
