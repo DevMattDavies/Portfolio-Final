@@ -25,6 +25,7 @@ body {
   overflow: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  -webkit-font-smoothing: antialiased;
 
 }
 

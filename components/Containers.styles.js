@@ -30,7 +30,47 @@ export const TitleAndMenuContainer = styled.div`
 `;
 
 export const AboutInfoContainer = styled.div`
+  height: auto;
+  width: 400px;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+`;
+
+export const TechstackInfoContainer = styled.div`
+  position: absolute;
+  right: 1.2rem;
+  bottom: 2rem;
   height: max-content;
-  width: 20%;
-  /* border: 2px solid orange; */
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+`;
+
+export const TechIconContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  animation: fadeInAnimation 2s ease-in;
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+`;
+
+export const TechIconRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 `;
