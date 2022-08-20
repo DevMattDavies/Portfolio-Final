@@ -22,19 +22,20 @@ const TechTextAndIcon = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 `;
 
 const TechIcon = styled.div`
   width: 20px;
   height: 20px;
   position: relative;
+  margin-top: 0.4rem;
 `;
 
 const NodeIconContainer = styled.div`
   width: 40px;
   height: 20px;
   position: relative;
+  margin-top: 0.2rem;
 `;
 
 export default function TechStack() {

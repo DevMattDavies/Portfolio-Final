@@ -4,14 +4,13 @@ import {
   PageContainer,
   Background,
   TitleAndMenuContainer,
-  AboutInfoContainer,
-  TechstackInfoContainer,
 } from "../components/Containers.styles";
 import BackgroundVideo from "../components/BackgroundVideo";
 import Menu from "../components/Menu";
 import TitleText from "../components/TitleText";
 import About from "../components/About";
 import TechStack from "../components/TechStack";
+import Projects from "../components/Projects";
 
 export default function Splash() {
   const [isAboutChecked, setIsAboutChecked] = useState(false);
@@ -35,16 +34,11 @@ export default function Splash() {
           <TitleText />
           <Menu menuState={menuState} />
         </TitleAndMenuContainer>
-        {isAboutChecked && (
-          <AboutInfoContainer>
-            <About isAboutChecked={isAboutChecked} />
-          </AboutInfoContainer>
-        )}
+        {isAboutChecked && <About isAboutChecked={isAboutChecked} />}
         {isTechstackChecked && (
-          <TechstackInfoContainer>
-            <TechStack isTechstackChecked={isTechstackChecked} />
-          </TechstackInfoContainer>
+          <TechStack isTechstackChecked={isTechstackChecked} />
         )}
+        {isProjectsChecked && <Projects />}
       </Background>
     </PageContainer>
   );

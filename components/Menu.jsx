@@ -45,10 +45,9 @@ export default function Menu({ menuState }) {
     menuState.setIsTechstackChecked(false);
   }
 
-
   return (
     <MenuContainer>
-      <CheckboxContainer>
+      <CheckboxContainer tabIndex={0}>
         {menuState.isAboutChecked ? <CheckboxChecked /> : <CheckboxUnchecked />}
         <MenuTextStyle onClick={aboutClickHandler}>About</MenuTextStyle>
       </CheckboxContainer>

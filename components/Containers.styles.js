@@ -48,6 +48,36 @@ export const TechIconContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+`;
+
+export const TechIconRow = styled.div`
+  display: flex;
+  gap: 3rem;
+
+  animation: techFadeInAnimation 4s ease-in-out;
+  @keyframes techFadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+`;
+
+export const ProjectInfoContainer = styled.div`
+  width: 400px;
+  /* max-height: 200px; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  text-align: right;
 
   animation: fadeInAnimation 2s ease-in;
   @keyframes fadeInAnimation {
@@ -62,9 +92,15 @@ export const TechIconContainer = styled.div`
   }
 `;
 
-export const TechIconRow = styled.div`
+export const ProjectRow = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  flex-direction: column;
+  align-items: flex-end;
+`;
+
+export const ProjectLinksRow = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
 `;
