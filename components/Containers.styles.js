@@ -32,20 +32,14 @@ export const TitleAndMenuContainer = styled.div`
 export const AboutInfoContainer = styled.div`
   height: auto;
   width: 400px;
-  position: absolute;
-  right: 2rem;
-  bottom: 2rem;
 `;
 
 export const TechstackInfoContainer = styled.div`
-  position: absolute;
-  right: 1.2rem;
-  bottom: 2rem;
   height: max-content;
   width: max-content;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: flex-end;
 `;
 

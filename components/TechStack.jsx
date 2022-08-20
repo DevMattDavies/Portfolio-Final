@@ -21,10 +21,18 @@ import SQLIcon from "../public/assets/tech-icons/sql.png";
 const TechTextAndIcon = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const TechIcon = styled.div`
   width: 20px;
+  height: 20px;
+  position: relative;
+`;
+
+const NodeIconContainer = styled.div`
+  width: 40px;
   height: 20px;
   position: relative;
 `;
@@ -36,50 +44,50 @@ export default function TechStack() {
       <TechIconContainer>
         <TechIconRow>
           <TechTextAndIcon>
+            <TechIconLabel>Next.js</TechIconLabel>
             <TechIcon>
-              <TechIconLabel>Next.js</TechIconLabel>
               <Image src={NextIcon} />
             </TechIcon>
           </TechTextAndIcon>
           <TechTextAndIcon>
+            <TechIconLabel>React</TechIconLabel>
             <TechIcon>
-              <TechIconLabel>React</TechIconLabel>
               <Image src={ReactIcon} />
             </TechIcon>
           </TechTextAndIcon>
           <TechTextAndIcon>
+            <TechIconLabel>CSS</TechIconLabel>
             <TechIcon>
-              <TechIconLabel>CSS</TechIconLabel>
               <Image src={CSSIcon} />
             </TechIcon>
           </TechTextAndIcon>
           <TechTextAndIcon>
+            <TechIconLabel>JS</TechIconLabel>
             <TechIcon>
-              <TechIconLabel>JS</TechIconLabel>
               <Image src={JSIcon} />
             </TechIcon>
           </TechTextAndIcon>
           <TechTextAndIcon>
+            <TechIconLabel>TS</TechIconLabel>
             <TechIcon>
-              <TechIconLabel>TS</TechIconLabel>
               <Image src={TSIcon} />
             </TechIcon>
           </TechTextAndIcon>
           <TechTextAndIcon>
+            <TechIconLabel>APIs</TechIconLabel>
             <TechIcon>
-              <TechIconLabel>APIs</TechIconLabel>
               <Image src={APIIcon} />
             </TechIcon>
           </TechTextAndIcon>
           <TechTextAndIcon>
-            <TechIcon>
-              <TechIconLabel>Node.js</TechIconLabel>
+            <TechIconLabel>Node.js</TechIconLabel>
+            <NodeIconContainer>
               <Image src={NodeIcon} />
-            </TechIcon>
+            </NodeIconContainer>
           </TechTextAndIcon>
           <TechTextAndIcon>
+            <TechIconLabel>SQL</TechIconLabel>
             <TechIcon>
-              <TechIconLabel>SQL</TechIconLabel>
               <Image src={SQLIcon} />
             </TechIcon>
           </TechTextAndIcon>
