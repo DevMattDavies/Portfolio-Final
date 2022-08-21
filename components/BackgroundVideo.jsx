@@ -12,6 +12,7 @@ const backgroundStyle = {
   overflow: "hidden",
   objectFit: "fill",
   // zIndex: "-10",
+  backgroundSize: "cover",
 };
 
 const BackgroundContainer = styled.div`
@@ -21,7 +22,7 @@ const BackgroundContainer = styled.div`
   top: 0;
   right: 0;
   overflow: hidden;
-  /* object-fit: fill; */
+  object-fit: fill;
   z-index: -10;
 `;
 
