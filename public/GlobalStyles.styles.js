@@ -2,18 +2,30 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     :root {
-  --font-primary: "PP Neue Montreal";
+  --font-primary: "pp_neue_montrealthin";
   --primary: black;
 
  
 }
 
-@font-face {
+${
+  "" /* @font-face {
   font-family: "PP Neue Montreal";
   src: url("/fonts/PPNeueMontreal-Light.otf") format("otf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+} */
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealthin';
+    src: url('/fonts/ppneuemontreal-thin-webfont.woff2') format('woff2'),
+         url('/fonts/ppneuemontreal-thin-webfont.woff') format('woff'),
+         url('/fonts/ppneuemontreal-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
