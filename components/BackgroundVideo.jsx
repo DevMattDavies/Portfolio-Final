@@ -3,7 +3,7 @@ import BackgroundGraphic from "../public/assets/background.mp4";
 
 const backgroundStyle = {
   width: "100%",
-  height: "100%",
+  minHeight: "100%",
   // padding: "2rem",
   // position: "absolute",
   // top: "0",
