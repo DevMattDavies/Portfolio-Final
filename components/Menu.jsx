@@ -1,16 +1,21 @@
 import styled from "styled-components";
 import { MenuTextStyle } from "./TextStyles.styles";
+import { useState } from "react";
 import {
   MenuContainer,
   CheckboxContainer,
   CheckboxUnchecked,
   CheckboxChecked,
-  NavContainer,
+  NavFadeInContainer,
+  NavFadeOutContainer,
 } from "./Containers.styles";
 
 export default function Menu({ menuState }) {
+  const [navDidMount, setNavDidMount] = useState(false);
+
   function menuClickHandler() {
-    menuState.setIsMenuOpen(true);
+    // menuState.setIsMenuOpen(true);
+    setNavDidMount(true);
   }
 
   function aboutClickHandler() {
@@ -33,7 +38,7 @@ export default function Menu({ menuState }) {
 
   return (
     <MenuContainer>
-      {menuState.isMenuOpen ? (
+      {menuState.isMenuOpen && (
         <>
           <CheckboxContainer>
             {menuState.isAboutChecked ? (
@@ -64,15 +69,32 @@ export default function Menu({ menuState }) {
             </MenuTextStyle>
           </CheckboxContainer>
         </>
-      ) : (
-        <NavContainer>
+      )}
+
+      {menuState.isMenuOpen === false && navDidMount === false && (
+        <NavFadeInContainer>
           <MenuTextStyle
             onClick={menuClickHandler}
             style={{ fontStyle: "italic" }}
           >
             Navigation
           </MenuTextStyle>
-        </NavContainer>
+        </NavFadeInContainer>
+      )}
+
+      {menuState.isMenuOpen === false && navDidMount === true && (
+        <NavFadeOutContainer
+          onAnimationEnd={() => {
+            menuState.setIsMenuOpen(true);
+          }}
+        >
+          <MenuTextStyle
+            onClick={menuClickHandler}
+            style={{ fontStyle: "italic" }}
+          >
+            Navigation
+          </MenuTextStyle>
+        </NavFadeOutContainer>
       )}
     </MenuContainer>
   );

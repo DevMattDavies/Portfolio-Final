@@ -37,10 +37,10 @@ export const MenuContainer = styled.div`
   gap: 1rem;
 `;
 
-export const NavContainer = styled.div`
+export const NavFadeInContainer = styled.div`
   display: flex;
-  animation: navFadeInAnimation 2s ease-in-out;
-  -webkit-animation: navFadeInAnimation 2s ease-in-out;
+  animation: navFadeInAnimation 4s ease-in-out;
+  -webkit-animation: navFadeInAnimation 4s ease-in-out;
   @keyframes navFadeInAnimation {
     0% {
       opacity: 0;
@@ -53,10 +53,39 @@ export const NavContainer = styled.div`
   }
 `;
 
+export const NavFadeOutContainer = styled.div`
+  display: flex;
+  animation: navFadeOutAnimation 2s ease-in-out;
+  -webkit-animation: navFadeOutAnimation 2s ease-in-out;
+  @keyframes navFadeOutAnimation {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+  }
+`;
+
 export const CheckboxContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  animation: menuFadeInAnimation 2s ease-in-out;
+  -webkit-animation: menuFadeInAnimation 2s ease-in-out;
+  @keyframes menuFadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 `;
 
 export const CheckboxUnchecked = styled.div`

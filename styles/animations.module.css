@@ -1,0 +1,15 @@
+.navFadeIn {
+  animation: navFadeInAnimation 2s ease-in-out;
+  -webkit-animation: navFadeInAnimation 2s ease-in-out;
+}
+
+@keyframes navFadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
