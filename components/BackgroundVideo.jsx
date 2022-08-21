@@ -2,13 +2,15 @@ import styled from "styled-components";
 import BackgroundGraphic from "../public/assets/background.mp4";
 
 const backgroundStyle = {
-  width: "100vw",
-  minHeight: "100vh",
-  // padding: "2rem",
+  minWidth: "100%",
+  minHeight: "100%",
+  width: "auto !important",
+  height: "auto !important",
+  // height: "auto",
+  // width: "auto",
   position: "fixed",
   top: "0",
   right: "0",
-  // display: "block",
   overflow: "hidden",
   objectFit: "fill",
   zIndex: "-10",
