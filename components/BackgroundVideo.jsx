@@ -1,27 +1,38 @@
 import styled from "styled-components";
 import BackgroundGraphic from "../public/assets/background.mp4";
 
-const BackgroundStyle = {
+const backgroundStyle = {
   width: "100%",
   height: "100%",
   // padding: "2rem",
-  position: "absolute",
-  top: "0",
-  right: "0",
+  // position: "absolute",
+  // top: "0",
+  // right: "0",
   // display: "block",
   overflow: "hidden",
   objectFit: "fill",
-  zIndex: "-10",
-  maxWidth: "-webkit-fill-available",
-  maxHeight: "-webkit-fill-available",
+  // zIndex: "-10",
 };
+
+const BackgroundContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  /* object-fit: fill; */
+  z-index: -10;
+`;
 
 export default function BackgroundVideo() {
   return (
     <>
-      <video style={BackgroundStyle} autoPlay loop muted>
-        <source src={BackgroundGraphic} type="video/mp4" />
-      </video>
+      <BackgroundContainer>
+        <video style={backgroundStyle} autoPlay loop muted playsInline>
+          <source src={BackgroundGraphic} type="video/mp4" />
+        </video>
+      </BackgroundContainer>
     </>
   );
 }
