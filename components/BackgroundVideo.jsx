@@ -5,13 +5,15 @@ const BackgroundStyle = {
   width: "100%",
   height: "100%",
   // padding: "2rem",
-  position: "fixed",
+  position: "absolute",
   top: "0",
   right: "0",
   // display: "block",
   overflow: "hidden",
   objectFit: "fill",
   zIndex: "-10",
+  maxWidth: "-webkit-fill-available",
+  maxHeight: "-webkit-fill-available",
 };
 
 export default function BackgroundVideo() {
