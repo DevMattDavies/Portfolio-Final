@@ -8,17 +8,8 @@ const GlobalStyle = createGlobalStyle`
  
 }
 
-${
-  "" /* @font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Light.otf") format("otf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-} */
-}
 
-@font-face {
+${'' /* @font-face {
     font-family: 'pp_neue_montrealthin';
     src: url('/fonts/ppneuemontreal-thin-webfont.woff2') format('woff2'),
          url('/fonts/ppneuemontreal-thin-webfont.woff') format('woff'),
@@ -26,7 +17,7 @@ ${
     font-weight: normal;
     font-style: normal;
 
-}
+} */}
 
 
 html,

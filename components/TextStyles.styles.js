@@ -8,7 +8,7 @@ export const TitleStyle = styled.h1`
   background-color: white;
   border-radius: 2px;
   width: max-content;
-  backdrop-filter: blur(30px);
+  /* backdrop-filter: blur(30px); */
 `;
 
 export const SubtitleStyle = styled.h2`
@@ -32,7 +32,6 @@ export const MenuTextStyle = styled.h2`
   display: inline-block;
   position: relative;
   /* background-color: white; */
- 
 
   &:after {
     content: "";

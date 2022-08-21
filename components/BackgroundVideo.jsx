@@ -12,7 +12,6 @@ const backgroundStyle = {
   overflow: "hidden",
   objectFit: "fill",
   zIndex: "-10",
-  backgroundSize: "cover",
 };
 
 const BackgroundContainer = styled.div`

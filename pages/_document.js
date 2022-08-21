@@ -32,6 +32,11 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
+            rel="preconnect"
+            href="/fonts/"
+            crossOrigin="anonymous"
+          />
+          <link
             rel="preload"
             href="/fonts/ppneuemontreal-thin-webfont.woff2"
             as="font"
