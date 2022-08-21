@@ -96,12 +96,6 @@ export default function Projects() {
           </ProjectLinkStyle>
         </ProjectLinksRow>
       </ProjectRow>
-
-      {/* <ProjectTextStyle>Wordle</ProjectTextStyle>
-      <ProjectTextStyle>1Source</ProjectTextStyle>
-      <ProjectTextStyle>Tip Splitter</ProjectTextStyle>
-      <ProjectTextStyle>Portfolio V1</ProjectTextStyle>
-      <ProjectTextStyle>Portfolio V2</ProjectTextStyle> */}
     </ProjectInfoContainer>
   );
 }

@@ -1,32 +1,18 @@
 import styled from "styled-components";
 import { MenuTextStyle } from "./TextStyles.styles";
-
-const MenuContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
-const CheckboxContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
-const CheckboxUnchecked = styled.div`
-  width: 10px;
-  height: 10px;
-  border: 1px solid black;
-`;
-
-const CheckboxChecked = styled.div`
-  width: 10px;
-  height: 10px;
-  border: 1px solid black;
-  background-color: black;
-`;
+import {
+  MenuContainer,
+  CheckboxContainer,
+  CheckboxUnchecked,
+  CheckboxChecked,
+  NavContainer,
+} from "./Containers.styles";
 
 export default function Menu({ menuState }) {
+  function menuClickHandler() {
+    menuState.setIsMenuOpen(true);
+  }
+
   function aboutClickHandler() {
     menuState.setIsAboutChecked(true);
     menuState.setIsTechstackChecked(false);
@@ -47,28 +33,47 @@ export default function Menu({ menuState }) {
 
   return (
     <MenuContainer>
-      <CheckboxContainer tabIndex={0}>
-        {menuState.isAboutChecked ? <CheckboxChecked /> : <CheckboxUnchecked />}
-        <MenuTextStyle onClick={aboutClickHandler}>About</MenuTextStyle>
-      </CheckboxContainer>
-      <CheckboxContainer>
-        {menuState.isTechstackChecked ? (
-          <CheckboxChecked />
-        ) : (
-          <CheckboxUnchecked />
-        )}
-        <MenuTextStyle onClick={techstackClickHandler}>
-          Tech Stack
-        </MenuTextStyle>
-      </CheckboxContainer>
-      <CheckboxContainer>
-        {menuState.isProjectsChecked ? (
-          <CheckboxChecked />
-        ) : (
-          <CheckboxUnchecked />
-        )}
-        <MenuTextStyle onClick={projectsClickHandler}>Projects</MenuTextStyle>
-      </CheckboxContainer>
+      {menuState.isMenuOpen ? (
+        <>
+          <CheckboxContainer>
+            {menuState.isAboutChecked ? (
+              <CheckboxChecked />
+            ) : (
+              <CheckboxUnchecked />
+            )}
+            <MenuTextStyle onClick={aboutClickHandler}>About</MenuTextStyle>
+          </CheckboxContainer>
+          <CheckboxContainer>
+            {menuState.isTechstackChecked ? (
+              <CheckboxChecked />
+            ) : (
+              <CheckboxUnchecked />
+            )}
+            <MenuTextStyle onClick={techstackClickHandler}>
+              Tech Stack
+            </MenuTextStyle>
+          </CheckboxContainer>
+          <CheckboxContainer>
+            {menuState.isProjectsChecked ? (
+              <CheckboxChecked />
+            ) : (
+              <CheckboxUnchecked />
+            )}
+            <MenuTextStyle onClick={projectsClickHandler}>
+              Projects
+            </MenuTextStyle>
+          </CheckboxContainer>
+        </>
+      ) : (
+        <NavContainer>
+          <MenuTextStyle
+            onClick={menuClickHandler}
+            style={{ fontStyle: "italic" }}
+          >
+            Navigation
+          </MenuTextStyle>
+        </NavContainer>
+      )}
     </MenuContainer>
   );
 }

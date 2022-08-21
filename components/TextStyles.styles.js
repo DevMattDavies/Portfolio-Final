@@ -60,6 +60,7 @@ export const TextStyle = styled.p`
   width: 400px;
 
   animation: fadeInAnimation 2s ease-in;
+  -webkit-animation: fadeInAnimation 2s ease-in;
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;

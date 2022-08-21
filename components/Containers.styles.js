@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Whole page
 export const PageContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -21,6 +22,7 @@ export const Background = styled.div`
   align-items: flex-end;
 `;
 
+// Title and menu
 export const TitleAndMenuContainer = styled.div`
   height: 100%;
   width: max-content;
@@ -29,11 +31,54 @@ export const TitleAndMenuContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const MenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+export const NavContainer = styled.div`
+  display: flex;
+  animation: navFadeInAnimation 2s ease-in-out;
+  -webkit-animation: navFadeInAnimation 2s ease-in-out;
+  @keyframes navFadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+`;
+
+export const CheckboxContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+export const CheckboxUnchecked = styled.div`
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+`;
+
+export const CheckboxChecked = styled.div`
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  background-color: black;
+`;
+
+// About section
 export const AboutInfoContainer = styled.div`
   height: auto;
   width: 400px;
 `;
 
+// Tech section
 export const TechstackInfoContainer = styled.div`
   height: max-content;
   width: max-content;
@@ -55,6 +100,7 @@ export const TechIconRow = styled.div`
   gap: 3rem;
 
   animation: techFadeInAnimation 4s ease-in-out;
+  -webkit-animation: techFadeInAnimation 4s ease-in-out;
   @keyframes techFadeInAnimation {
     0% {
       opacity: 0;
@@ -67,19 +113,17 @@ export const TechIconRow = styled.div`
   }
 `;
 
+// Project section
 export const ProjectInfoContainer = styled.div`
   width: 400px;
-  /* max-height: 200px; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: flex-end;
-  overflow: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   text-align: right;
 
   animation: fadeInAnimation 2s ease-in;
+  -webkit-animation: fadeInAnimation 2s ease-in;
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;

@@ -13,11 +13,14 @@ import TechStack from "../components/TechStack";
 import Projects from "../components/Projects";
 
 export default function Splash() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutChecked, setIsAboutChecked] = useState(false);
   const [isTechstackChecked, setIsTechstackChecked] = useState(false);
   const [isProjectsChecked, setIsProjectsChecked] = useState(false);
 
   const menuState = {
+    isMenuOpen,
+    setIsMenuOpen,
     isAboutChecked,
     setIsAboutChecked,
     isTechstackChecked,
