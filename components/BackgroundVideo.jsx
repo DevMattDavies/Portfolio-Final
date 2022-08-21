@@ -2,16 +2,16 @@ import styled from "styled-components";
 import BackgroundGraphic from "../public/assets/background.mp4";
 
 const backgroundStyle = {
-  width: "100%",
-  minHeight: "100%",
+  width: "100vw",
+  minHeight: "100vh",
   // padding: "2rem",
-  // position: "absolute",
-  // top: "0",
-  // right: "0",
+  position: "fixed",
+  top: "0",
+  right: "0",
   // display: "block",
   overflow: "hidden",
   objectFit: "fill",
-  // zIndex: "-10",
+  zIndex: "-10",
   backgroundSize: "cover",
 };
 
@@ -29,11 +29,11 @@ const BackgroundContainer = styled.div`
 export default function BackgroundVideo() {
   return (
     <>
-      <BackgroundContainer>
-        <video style={backgroundStyle} autoPlay loop muted playsInline>
-          <source src={BackgroundGraphic} type="video/mp4" />
-        </video>
-      </BackgroundContainer>
+      {/* <BackgroundContainer> */}
+      <video style={backgroundStyle} autoPlay loop muted playsInline>
+        <source src={BackgroundGraphic} type="video/mp4" />
+      </video>
+      {/* </BackgroundContainer> */}
     </>
   );
 }
