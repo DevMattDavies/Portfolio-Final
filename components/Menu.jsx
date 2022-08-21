@@ -10,12 +10,14 @@ import {
   NavFadeOutContainer,
 } from "./Containers.styles";
 
+import { motion, AnimatePresence } from "framer-motion";
+
 export default function Menu({ menuState }) {
   const [navDidMount, setNavDidMount] = useState(false);
 
   function menuClickHandler() {
-    // menuState.setIsMenuOpen(true);
-    setNavDidMount(true);
+    menuState.setIsMenuOpen(true);
+    // setNavDidMount(true);
   }
 
   function aboutClickHandler() {
@@ -71,31 +73,29 @@ export default function Menu({ menuState }) {
         </>
       )}
 
-      {menuState.isMenuOpen === false && navDidMount === false && (
-        <NavFadeInContainer>
-          <MenuTextStyle
-            onClick={menuClickHandler}
-            style={{ fontStyle: "italic" }}
+      <AnimatePresence>
+        {menuState.isMenuOpen === false && (
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{
+              x: { duration: 3 },
+              opacity: { duration: 3 },
+              default: { ease: "easeInOut" },
+            }}
           >
-            Navigation
-          </MenuTextStyle>
-        </NavFadeInContainer>
-      )}
-
-      {menuState.isMenuOpen === false && navDidMount === true && (
-        <NavFadeOutContainer
-          onAnimationEnd={() => {
-            menuState.setIsMenuOpen(true);
-          }}
-        >
-          <MenuTextStyle
-            onClick={menuClickHandler}
-            style={{ fontStyle: "italic" }}
-          >
-            Navigation
-          </MenuTextStyle>
-        </NavFadeOutContainer>
-      )}
+            <NavFadeInContainer>
+              <MenuTextStyle
+                onClick={menuClickHandler}
+                style={{ fontStyle: "italic" }}
+              >
+                Navigation
+              </MenuTextStyle>
+            </NavFadeInContainer>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </MenuContainer>
   );
 }

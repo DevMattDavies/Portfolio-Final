@@ -39,18 +39,6 @@ export const MenuContainer = styled.div`
 
 export const NavFadeInContainer = styled.div`
   display: flex;
-  animation: navFadeInAnimation 4s ease-in-out;
-  -webkit-animation: navFadeInAnimation 4s ease-in-out;
-  @keyframes navFadeInAnimation {
-    0% {
-      opacity: 0;
-      transform: translateX(-40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
 `;
 
 export const NavFadeOutContainer = styled.div`
@@ -73,9 +61,13 @@ export const CheckboxContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  opacity: 0;
 
-  animation: menuFadeInAnimation 2s ease-in-out;
-  -webkit-animation: menuFadeInAnimation 2s ease-in-out;
+  animation: menuFadeInAnimation 3s ease-in-out forwards;
+  -webkit-animation: menuFadeInAnimation 3s ease-in-out forwards;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+
   @keyframes menuFadeInAnimation {
     0% {
       opacity: 0;
