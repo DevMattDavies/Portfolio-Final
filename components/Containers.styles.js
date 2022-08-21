@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 // Whole page
 export const PageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   border: 1.7rem solid white;
   height: 100vh;
   width: 100vw;
