@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BackgroundGraphic from "../public/assets/background.webm";
+import BackgroundGraphic from "../public/assets/background.mp4";
 
 const BackgroundStyle = {
   width: "100%",
@@ -18,7 +18,7 @@ export default function BackgroundVideo() {
   return (
     <>
       <video style={BackgroundStyle} autoPlay loop muted>
-        <source src={BackgroundGraphic} type="video/webm" />
+        <source src={BackgroundGraphic} type="video/mp4" />
       </video>
     </>
   );
