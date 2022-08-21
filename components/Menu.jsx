@@ -80,8 +80,8 @@ export default function Menu({ menuState }) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
             transition={{
-              x: { duration: 3 },
-              opacity: { duration: 3 },
+              x: { duration: 2 },
+              opacity: { duration: 2 },
               default: { ease: "easeInOut" },
             }}
           >

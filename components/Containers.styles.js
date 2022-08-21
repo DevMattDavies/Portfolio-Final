@@ -63,10 +63,10 @@ export const CheckboxContainer = styled.div`
   gap: 0.5rem;
   opacity: 0;
 
-  animation: menuFadeInAnimation 3s ease-in-out forwards;
-  -webkit-animation: menuFadeInAnimation 3s ease-in-out forwards;
-  animation-delay: 3s;
-  -webkit-animation-delay: 3s;
+  animation: menuFadeInAnimation 2s ease-in-out forwards;
+  -webkit-animation: menuFadeInAnimation 2s ease-in-out forwards;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
 
   @keyframes menuFadeInAnimation {
     0% {
