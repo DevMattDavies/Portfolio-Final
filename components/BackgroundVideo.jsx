@@ -8,7 +8,7 @@ const BackgroundStyle = {
   position: "fixed",
   top: "0",
   right: "0",
-  display: "block",
+  // display: "block",
   overflow: "hidden",
   objectFit: "fill",
   zIndex: "-10",
