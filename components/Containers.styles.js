@@ -63,6 +63,8 @@ export const CheckboxContainer = styled.div`
   align-items: center;
   gap: 0.5rem;
   opacity: 0;
+  backdrop-filter: blur(3px);
+  width: max-content;
 
   animation: menuFadeInAnimation 2s ease-in-out forwards;
   -webkit-animation: menuFadeInAnimation 2s ease-in-out forwards;

@@ -6,8 +6,9 @@ export const TitleStyle = styled.h1`
   font-family: var(--font-primary);
   font-weight: 300;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 2px;
   width: max-content;
+  backdrop-filter: blur(30px);
 `;
 
 export const SubtitleStyle = styled.h2`
@@ -16,7 +17,8 @@ export const SubtitleStyle = styled.h2`
   font-family: var(--font-primary);
   font-weight: 300;
   background-color: white;
-  border-radius: 15px;
+  /* backdrop-filter: blur(30px); */
+  border-radius: 2px;
   width: max-content;
 `;
 
@@ -29,6 +31,8 @@ export const MenuTextStyle = styled.h2`
   border: 1px solid transparent;
   display: inline-block;
   position: relative;
+  /* background-color: white; */
+ 
 
   &:after {
     content: "";
