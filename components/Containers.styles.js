@@ -8,6 +8,7 @@ export const PageContainer = styled.div`
   border: 1.7rem solid white;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 `;
 
 export const Background = styled.div`

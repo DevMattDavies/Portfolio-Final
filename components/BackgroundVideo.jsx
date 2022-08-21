@@ -2,12 +2,10 @@ import styled from "styled-components";
 import BackgroundGraphic from "../public/assets/background.mp4";
 
 const backgroundStyle = {
-  minWidth: "100vw",
-  minHeight: "100vh",
-  maxWidth: "101vw",
-  maxHeight: "101vh",
-  width: "auto !important",
-  height: "auto !important",
+  width: "177.77777778vh",
+  height: "100%",
+  minWidth: "100%",
+  minHeight: "56.25vw",
   position: "fixed",
   top: "0",
   right: "0",
