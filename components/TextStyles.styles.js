@@ -5,14 +5,15 @@ export const ContactStyle = styled.a`
   font-size: 0.8rem;
   font-family: var(--font-primary);
   font-weight: 700;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
+  border-left: 0.8px solid transparent;
+  border-right: 0.8px solid transparent;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
+  margin-bottom: -0.1rem;
 
   &:hover {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 0.8px solid black;
+    border-right: 0.8px solid black;
   }
 `;
 
