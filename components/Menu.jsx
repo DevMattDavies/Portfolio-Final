@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { MenuTextStyle } from "./TextStyles.styles";
 import { useState } from "react";
+import ExploreIcon from "@mui/icons-material/Explore";
+
 import {
   MenuContainer,
   CheckboxContainer,
   CheckboxUnchecked,
   CheckboxChecked,
   NavFadeInContainer,
-  NavFadeOutContainer,
 } from "./Containers.styles";
 
 import { motion, AnimatePresence } from "framer-motion";
@@ -86,11 +87,12 @@ export default function Menu({ menuState }) {
             }}
           >
             <NavFadeInContainer>
+              <ExploreIcon onClick={menuClickHandler} />
               <MenuTextStyle
                 onClick={menuClickHandler}
-                style={{ fontStyle: "italic" }}
+                style={{ fontStyle: "italic", paddingBottom: "0.15rem" }}
               >
-                Navigation
+                explore
               </MenuTextStyle>
             </NavFadeInContainer>
           </motion.div>

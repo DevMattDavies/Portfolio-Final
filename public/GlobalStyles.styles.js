@@ -9,15 +9,6 @@ const GlobalStyle = createGlobalStyle`
 }
 
 
-${'' /* @font-face {
-    font-family: 'pp_neue_montrealthin';
-    src: url('/fonts/ppneuemontreal-thin-webfont.woff2') format('woff2'),
-         url('/fonts/ppneuemontreal-thin-webfont.woff') format('woff'),
-         url('/fonts/ppneuemontreal-thin-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-} */}
 
 
 html,

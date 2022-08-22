@@ -5,7 +5,7 @@ export const PageContainer = styled.div`
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
-  border: 1.7rem solid white;
+  border: 1.5rem solid white;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -40,21 +40,15 @@ export const MenuContainer = styled.div`
 
 export const NavFadeInContainer = styled.div`
   display: flex;
-`;
+  align-items: center;
+  gap: 0.2rem;
+  width: max-content;
+  backdrop-filter: blur(5px);
+  border-radius: 2px;
+  padding: 0 0.1rem;
 
-export const NavFadeOutContainer = styled.div`
-  display: flex;
-  animation: navFadeOutAnimation 2s ease-in-out;
-  -webkit-animation: navFadeOutAnimation 2s ease-in-out;
-  @keyframes navFadeOutAnimation {
-    0% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(-40px);
-    }
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -63,9 +57,9 @@ export const CheckboxContainer = styled.div`
   align-items: center;
   gap: 0.5rem;
   opacity: 0;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(5px);
   border-radius: 2px;
-  /* padding: 0 1rem; */
+  padding: 0 0.1rem;
   /* background-color: white; */
   width: max-content;
 
