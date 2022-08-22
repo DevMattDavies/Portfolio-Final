@@ -21,6 +21,7 @@ body {
   scrollbar-width: none;
   -webkit-font-smoothing: antialiased;
 
+
 }
 
 a {
@@ -35,6 +36,7 @@ a {
   padding: 0;
   margin: 0;
   cursor: default;
+  cursor: none;
 }
 
 `;

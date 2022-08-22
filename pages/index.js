@@ -2,9 +2,13 @@ import { useState } from "react";
 
 import {
   PageContainer,
+  ContactContainer,
   Background,
   TitleAndMenuContainer,
 } from "../components/Containers.styles";
+
+import { ContactStyle } from "../components/TextStyles.styles";
+
 import BackgroundVideo from "../components/BackgroundVideo";
 import Menu from "../components/Menu";
 import TitleText from "../components/TitleText";
@@ -31,6 +35,22 @@ export default function Splash() {
 
   return (
     <PageContainer>
+      {/* <OuterContainer> */}
+      <ContactContainer>
+        <ContactStyle target="_blank" href="https://github.com/DevMattDavies">
+          Github.
+        </ContactStyle>
+        <ContactStyle
+          target="_blank"
+          href="https://www.linkedin.com/in/devmattdavies/"
+        >
+          LinkedIn.
+        </ContactStyle>
+        <ContactStyle target="_blank" href="https://twitter.com/DevMattDavies">
+          Twitter.
+        </ContactStyle>
+        <ContactStyle href="mailto:matt@mattdavies.dev">Email.</ContactStyle>
+      </ContactContainer>
       <BackgroundVideo />
       <Background>
         <TitleAndMenuContainer>
@@ -43,6 +63,7 @@ export default function Splash() {
         )}
         {isProjectsChecked && <Projects />}
       </Background>
+      {/* </OuterContainer> */}
     </PageContainer>
   );
 }

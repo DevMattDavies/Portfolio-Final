@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+export const ContactStyle = styled.a`
+  color: black;
+  font-size: 0.8rem;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+
+  &:hover {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+`;
+
 export const TitleStyle = styled.h1`
   color: black;
   font-size: 2rem;
@@ -22,7 +38,7 @@ export const SubtitleStyle = styled.h2`
   width: max-content;
 `;
 
-export const MenuTextStyle = styled.h2`
+export const MenuTextStyle = styled.h3`
   color: black;
   font-size: 1.3rem;
   font-family: var(--font-primary);

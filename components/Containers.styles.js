@@ -11,6 +11,24 @@ export const PageContainer = styled.div`
   overflow: hidden;
 `;
 
+export const ContactContainer = styled.div`
+  position: fixed;
+  top: 0;
+  right: 1.5rem;
+  width: 100px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+`;
+
+// export const OuterContainer = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   border: 0.8px solid black;
+// `;
+
 export const Background = styled.div`
   width: 100%;
   height: 100%;
