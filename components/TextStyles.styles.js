@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const ContactStyle = styled.a`
   color: black;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-family: var(--font-primary);
   font-weight: 700;
   border-left: 0.8px solid transparent;
   border-right: 0.8px solid transparent;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
-  margin-bottom: -0.1rem;
+  margin-bottom: 0.3rem;
 
   &:hover {
     border-left: 0.8px solid black;

@@ -31,11 +31,13 @@ a {
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   font-family: var(--font-primary);
   font-size: 1rem;
   padding: 0;
   margin: 0;
-  cursor: default;
+  ${"" /* cursor: default; */}
   cursor: none;
 }
 
