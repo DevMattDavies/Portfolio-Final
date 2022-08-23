@@ -8,7 +8,7 @@ export const PageContainer = styled.div`
   border: 1.5rem solid white;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export const ContactContainer = styled.div`
