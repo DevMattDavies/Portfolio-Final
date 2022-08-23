@@ -13,6 +13,7 @@ html,
 body {
   font-size: calc(60% + 0.8vmin);
   scroll-behavior: smooth;
+  position: fixed;
   height: 100%;
   width: 100%;
   overflow: hidden;

@@ -6,8 +6,8 @@ export const PageContainer = styled.div`
   /* justify-content: center; */
   /* align-items: center; */
   /* border: 1.5rem solid white; */
+  /* height: 100%; */
   height: 100%;
-  height: -webkit-fill-available;
   width: 100%;
   /* overflow: hidden; */
 `;
