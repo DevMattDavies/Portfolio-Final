@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import {
   PageContainer,
+  InnerContainer,
   ContactContainer,
   Background,
   TitleAndMenuContainer,
@@ -35,7 +36,6 @@ export default function Splash() {
 
   return (
     <PageContainer>
-      {/* <OuterContainer> */}
       <ContactContainer>
         <ContactStyle target="_blank" href="https://github.com/DevMattDavies">
           Github.
@@ -53,17 +53,18 @@ export default function Splash() {
       </ContactContainer>
       <BackgroundVideo />
       <Background>
-        <TitleAndMenuContainer>
-          <TitleText />
-          <Menu menuState={menuState} />
-        </TitleAndMenuContainer>
-        {isAboutChecked && <About isAboutChecked={isAboutChecked} />}
-        {isTechstackChecked && (
-          <TechStack isTechstackChecked={isTechstackChecked} />
-        )}
-        {isProjectsChecked && <Projects />}
+        <InnerContainer>
+          <TitleAndMenuContainer>
+            <TitleText />
+            <Menu menuState={menuState} />
+          </TitleAndMenuContainer>
+          {isAboutChecked && <About isAboutChecked={isAboutChecked} />}
+          {isTechstackChecked && (
+            <TechStack isTechstackChecked={isTechstackChecked} />
+          )}
+          {isProjectsChecked && <Projects />}
+        </InnerContainer>
       </Background>
-      {/* </OuterContainer> */}
     </PageContainer>
   );
 }

@@ -5,9 +5,10 @@ export const PageContainer = styled.div`
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
-  border: 1.5rem solid white;
-  height: 100vh;
-  width: 100vw;
+  /* border: 1.5rem solid white; */
+  height: 100%;
+  height: -webkit-fill-available;
+  width: 100%;
   /* overflow: hidden; */
 `;
 
@@ -21,24 +22,27 @@ export const ContactContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
+  z-index: 10;
 `;
 
-// export const OuterContainer = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   border: 0.8px solid black;
-// `;
-
 export const Background = styled.div`
-  width: 100%;
-  height: 100%;
-  border: 0.8px solid black;
+  width: 100vw;
+  height: 100vh;
+  border: 1.5rem solid white;
+  /* border: 0.8px solid black; */
   z-index: 1;
   position: relative;
-  padding: 2rem;
+  /* padding: 2rem; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+`;
+
+export const InnerContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  border: 0.8px solid black;
+  padding: 2rem;
 `;
 
 // Title and menu

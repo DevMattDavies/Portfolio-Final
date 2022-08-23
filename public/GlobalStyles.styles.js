@@ -4,8 +4,6 @@ const GlobalStyle = createGlobalStyle`
     :root {
   --font-primary: "pp_neue_montrealthin";
   --primary: black;
-
- 
 }
 
 
@@ -16,12 +14,11 @@ body {
   font-size: calc(60% + 0.8vmin);
   scroll-behavior: smooth;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   -webkit-font-smoothing: antialiased;
-
-
 }
 
 a {
