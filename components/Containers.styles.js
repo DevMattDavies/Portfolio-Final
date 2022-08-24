@@ -8,6 +8,7 @@ export const PageContainer = styled.div`
   /* border: 1.5rem solid white; */
   /* height: 100%; */
   height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   /* overflow: hidden; */
 `;
