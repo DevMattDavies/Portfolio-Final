@@ -18,8 +18,9 @@ body {
   scroll-behavior: smooth;
   position: fixed;
   height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  overflow: hidden;
+  ${"" /* overflow: hidden; */}
   -ms-overflow-style: none;
   scrollbar-width: none;
   -webkit-font-smoothing: antialiased;
