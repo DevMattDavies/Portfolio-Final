@@ -1,12 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
+function appHeight() {
+  const doc = document.documentElement;
+  doc.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+}
+
 const GlobalStyle = createGlobalStyle`
     :root {
   --font-primary: "pp_neue_montrealthin";
   --primary: black;
 }
-
-
 
 
 html,

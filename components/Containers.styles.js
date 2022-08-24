@@ -28,6 +28,7 @@ export const ContactContainer = styled.div`
 export const Background = styled.div`
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   border: 1.5rem solid white;
   /* border: 0.8px solid black; */
   z-index: 1;
