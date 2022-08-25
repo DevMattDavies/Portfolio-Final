@@ -167,8 +167,11 @@ export const TechstackInfoContainer = styled.div`
   flex-direction: column;
   gap: 2.5rem;
   align-items: flex-end;
-  backdrop-filter: blur(30px);
-  border-radius: 2px;
+
+  @media screen and (max-width: 500px) {
+    backdrop-filter: blur(30px);
+    border-radius: 2px;
+  }
 `;
 
 export const TechIconContainer = styled.div`

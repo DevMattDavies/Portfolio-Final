@@ -85,7 +85,7 @@ export const TextStyle = styled.p`
   font-weight: 300;
   /* border-radius: 15px; */
   text-align: right;
-  /* backdrop-filter: blur(30px); */
+  backdrop-filter: blur(5px);
   max-width: 400px;
 
   animation: fadeInAnimation 2s ease-in;
@@ -99,6 +99,10 @@ export const TextStyle = styled.p`
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    backdrop-filter: none;
   }
 `;
 
