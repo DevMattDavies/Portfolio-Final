@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // Whole page
 export const PageContainer = styled.div`
-  /* display: flex; */
+  display: flex;
   /* justify-content: center; */
   /* align-items: center; */
   /* border: 1.5rem solid white; */
@@ -45,6 +45,9 @@ export const InnerContainer = styled.div`
   height: 100%;
   border: 0.8px solid black;
   padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 `;
 
 // Title and menu
