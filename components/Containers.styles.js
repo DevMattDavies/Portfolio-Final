@@ -150,6 +150,8 @@ export const CheckboxChecked = styled.div`
 export const AboutInfoContainer = styled.div`
   height: auto;
   max-width: 100%;
+  backdrop-filter: blur(30px);
+  border-radius: 2px;
 `;
 
 // Tech section
@@ -160,6 +162,8 @@ export const TechstackInfoContainer = styled.div`
   flex-direction: column;
   gap: 2.5rem;
   align-items: flex-end;
+  backdrop-filter: blur(30px);
+  border-radius: 2px;
 `;
 
 export const TechIconContainer = styled.div`
@@ -201,6 +205,8 @@ export const ProjectInfoContainer = styled.div`
   gap: 1rem;
   align-items: flex-end;
   text-align: right;
+  backdrop-filter: blur(30px);
+  border-radius: 2px;
 
   animation: fadeInAnimation 2s ease-in;
   -webkit-animation: fadeInAnimation 2s ease-in;

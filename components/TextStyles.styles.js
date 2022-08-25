@@ -83,9 +83,9 @@ export const TextStyle = styled.p`
   font-size: 1.2rem;
   font-family: var(--font-primary);
   font-weight: 300;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   text-align: right;
-  backdrop-filter: blur(30px);
+  /* backdrop-filter: blur(30px); */
   max-width: 400px;
 
   animation: fadeInAnimation 2s ease-in;
@@ -109,7 +109,7 @@ export const TechIconLabel = styled.p`
   font-weight: 300;
   transform: rotate(-45deg);
   margin-bottom: 1rem;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   width: max-content;
 `;
 
