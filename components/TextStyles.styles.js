@@ -85,7 +85,7 @@ export const TextStyle = styled.p`
   font-weight: 300;
   border-radius: 15px;
   text-align: right;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(30px);
   max-width: 400px;
 
   animation: fadeInAnimation 2s ease-in;
@@ -118,8 +118,9 @@ export const ProjectTitleStyle = styled.h2`
   font-size: 1.5rem;
   font-family: var(--font-primary);
   font-weight: 300;
-  background-color: white;
-  border-radius: 15px;
+  /* background-color: white;
+  border-radius: 15px; */
+  backdrop-filter: blur(5px);
   width: max-content;
   font-weight: 300;
 `;
