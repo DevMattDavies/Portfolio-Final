@@ -128,6 +128,10 @@ export const ProjectTitleStyle = styled.h2`
   border-radius: 2px;
   width: max-content;
   font-weight: 300;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const ProjectLinkStyle = styled.a`
@@ -159,5 +163,9 @@ export const ProjectLinkStyle = styled.a`
   &:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.3rem;
   }
 `;

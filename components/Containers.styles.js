@@ -80,7 +80,7 @@ export const TitleAndMenuContainerMobile = styled.div`
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  /* gap: 20rem; */
+  gap: 2rem;
 `;
 
 export const MenuContainer = styled.div`
@@ -213,8 +213,6 @@ export const ProjectInfoContainer = styled.div`
   gap: 1rem;
   align-items: flex-end;
   text-align: right;
-  /* backdrop-filter: blur(30px);
-  border-radius: 2px; */
 
   animation: fadeInAnimation 2s ease-in;
   -webkit-animation: fadeInAnimation 2s ease-in;
@@ -228,12 +226,27 @@ export const ProjectInfoContainer = styled.div`
       transform: translateY(0);
     }
   }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
 `;
 
 export const ProjectRow = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @media screen and (max-width: 500px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const ProjectLinksRow = styled.div`
@@ -241,4 +254,9 @@ export const ProjectLinksRow = styled.div`
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
+
+  @media screen and (max-width: 500px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
