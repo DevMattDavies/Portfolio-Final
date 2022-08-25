@@ -1,29 +1,32 @@
-import { useState } from "react";
+import Desktop from "../components/Desktop";
+import Contact from "../components/Contact";
+import { useState, useEffect } from "react";
 
-import {
-  PageContainer,
-  InnerContainer,
-  ContactContainer,
-  Background,
-  TitleAndMenuContainer,
-} from "../components/Containers.styles";
-
-import { ContactStyle } from "../components/TextStyles.styles";
-
-import BackgroundVideo from "../components/BackgroundVideo";
-import Menu from "../components/Menu";
-import TitleText from "../components/TitleText";
-import About from "../components/About";
-import TechStack from "../components/TechStack";
-import Projects from "../components/Projects";
+import { PageContainer } from "../components/Containers.styles";
+import Mobile from "../components/Mobile";
 
 export default function Splash() {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  }, []);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutChecked, setIsAboutChecked] = useState(false);
   const [isTechstackChecked, setIsTechstackChecked] = useState(false);
   const [isProjectsChecked, setIsProjectsChecked] = useState(false);
 
   const menuState = {
+    width,
     isMenuOpen,
     setIsMenuOpen,
     isAboutChecked,
@@ -36,35 +39,12 @@ export default function Splash() {
 
   return (
     <PageContainer>
-      <ContactContainer>
-        <ContactStyle target="_blank" href="https://github.com/DevMattDavies">
-          Github.
-        </ContactStyle>
-        <ContactStyle
-          target="_blank"
-          href="https://www.linkedin.com/in/devmattdavies/"
-        >
-          LinkedIn.
-        </ContactStyle>
-        <ContactStyle target="_blank" href="https://twitter.com/DevMattDavies">
-          Twitter.
-        </ContactStyle>
-        <ContactStyle href="mailto:matt@mattdavies.dev">Email.</ContactStyle>
-      </ContactContainer>
-      <BackgroundVideo />
-      <Background>
-        <InnerContainer>
-          <TitleAndMenuContainer>
-            <TitleText />
-            <Menu menuState={menuState} />
-          </TitleAndMenuContainer>
-          {isAboutChecked && <About isAboutChecked={isAboutChecked} />}
-          {isTechstackChecked && (
-            <TechStack isTechstackChecked={isTechstackChecked} />
-          )}
-          {isProjectsChecked && <Projects />}
-        </InnerContainer>
-      </Background>
+      <Contact />
+      {width >= 500 ? (
+        <Desktop menuState={menuState} />
+      ) : (
+        <Mobile menuState={menuState} />
+      )}
     </PageContainer>
   );
 }

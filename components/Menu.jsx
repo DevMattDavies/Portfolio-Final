@@ -1,6 +1,4 @@
-import styled from "styled-components";
 import { MenuTextStyle } from "./TextStyles.styles";
-import { useState } from "react";
 import ExploreIcon from "@mui/icons-material/Explore";
 
 import {
@@ -14,11 +12,8 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Menu({ menuState }) {
-  const [navDidMount, setNavDidMount] = useState(false);
-
   function menuClickHandler() {
     menuState.setIsMenuOpen(true);
-    // setNavDidMount(true);
   }
 
   function aboutClickHandler() {

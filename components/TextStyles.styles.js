@@ -25,7 +25,11 @@ export const TitleStyle = styled.h1`
   background-color: white;
   border-radius: 2px;
   width: max-content;
-  /* backdrop-filter: blur(30px); */
+
+  @media screen and (max-width: 500px) {
+    backdrop-filter: blur(30px);
+    background-color: transparent;
+  }
 `;
 
 export const SubtitleStyle = styled.h2`
@@ -37,6 +41,11 @@ export const SubtitleStyle = styled.h2`
   /* backdrop-filter: blur(30px); */
   border-radius: 2px;
   width: max-content;
+
+  @media screen and (max-width: 500px) {
+    backdrop-filter: blur(30px);
+    background-color: transparent;
+  }
 `;
 
 export const MenuTextStyle = styled.h3`
@@ -77,7 +86,7 @@ export const TextStyle = styled.p`
   border-radius: 15px;
   text-align: right;
   backdrop-filter: blur(3px);
-  width: 400px;
+  max-width: 400px;
 
   animation: fadeInAnimation 2s ease-in;
   -webkit-animation: fadeInAnimation 2s ease-in;

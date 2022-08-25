@@ -3,14 +3,9 @@ import styled from "styled-components";
 // Whole page
 export const PageContainer = styled.div`
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* border: 1.5rem solid white; */
-  /* height: 100%; */
   height: 100%;
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  /* overflow: hidden; */
 `;
 
 export const ContactContainer = styled.div`
@@ -26,21 +21,31 @@ export const ContactContainer = styled.div`
   z-index: 10;
 `;
 
-export const Background = styled.div`
+export const BackgroundDesktop = styled.div`
   width: 100vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   border: 1.5rem solid white;
-  /* border: 0.8px solid black; */
   z-index: 1;
   position: relative;
-  /* padding: 2rem; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 `;
 
-export const InnerContainer = styled.div`
+export const BackgroundMobile = styled.div`
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  border: 1.5rem solid white;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  /* justify-content: space-between;
+  align-items: flex-end; */
+`;
+
+export const InnerContainerDesktop = styled.div`
   width: 100%;
   height: 100%;
   border: 0.8px solid black;
@@ -50,8 +55,18 @@ export const InnerContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const InnerContainerMobile = styled.div`
+  width: 100%;
+  height: 100%;
+  border: 0.8px solid black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
 // Title and menu
-export const TitleAndMenuContainer = styled.div`
+export const TitleAndMenuContainerDesktop = styled.div`
   height: 100%;
   width: max-content;
   display: flex;
@@ -59,10 +74,21 @@ export const TitleAndMenuContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const TitleAndMenuContainerMobile = styled.div`
+  height: 100%;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* gap: 20rem; */
+`;
+
 export const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: flex-end;
+  height: 100px;
 `;
 
 export const NavFadeInContainer = styled.div`
@@ -123,13 +149,13 @@ export const CheckboxChecked = styled.div`
 // About section
 export const AboutInfoContainer = styled.div`
   height: auto;
-  width: 400px;
+  max-width: 100%;
 `;
 
 // Tech section
 export const TechstackInfoContainer = styled.div`
   height: max-content;
-  width: max-content;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -159,11 +185,17 @@ export const TechIconRow = styled.div`
       transform: translateY(0);
     }
   }
+
+  @media screen and (max-width: 500px) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 `;
 
 // Project section
 export const ProjectInfoContainer = styled.div`
-  width: 400px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
