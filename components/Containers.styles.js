@@ -103,6 +103,11 @@ export const NavFadeInContainer = styled.div`
   &:hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 500px) {
+    backdrop-filter: blur(30px);
+    border-radius: 2px;
+  }
 `;
 
 export const CheckboxContainer = styled.div`
@@ -205,8 +210,8 @@ export const ProjectInfoContainer = styled.div`
   gap: 1rem;
   align-items: flex-end;
   text-align: right;
-  backdrop-filter: blur(30px);
-  border-radius: 2px;
+  /* backdrop-filter: blur(30px);
+  border-radius: 2px; */
 
   animation: fadeInAnimation 2s ease-in;
   -webkit-animation: fadeInAnimation 2s ease-in;

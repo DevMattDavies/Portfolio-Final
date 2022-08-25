@@ -120,7 +120,8 @@ export const ProjectTitleStyle = styled.h2`
   font-weight: 300;
   /* background-color: white;
   border-radius: 15px; */
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(30px);
+  border-radius: 2px;
   width: max-content;
   font-weight: 300;
 `;
@@ -134,6 +135,8 @@ export const ProjectLinkStyle = styled.a`
   border: 1px solid transparent;
   display: inline-block;
   position: relative;
+  backdrop-filter: blur(30px);
+  border-radius: 2px;
   /* font-weight: 400; */
 
   &:after {
