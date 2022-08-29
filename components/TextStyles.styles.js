@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactStyle = styled.a`
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: var(--font-primary);
   font-weight: 700;
   border-left: 0.8px solid transparent;
