@@ -15,6 +15,23 @@ export default function Projects() {
   return (
     <ProjectInfoContainer>
       <ProjectRow>
+        <ProjectTitleStyle>Photosnap Designer Website</ProjectTitleStyle>
+        <ProjectLinksRow>
+          <ProjectLinkStyle
+            target="_blank"
+            href="https://photosnap-multipage-website-ashen.vercel.app/"
+          >
+            URL
+          </ProjectLinkStyle>
+          <ProjectLinkStyle
+            target="_blank"
+            href="https://github.com/DevMattDavies/photosnap-multipage-website"
+          >
+            Github
+          </ProjectLinkStyle>
+        </ProjectLinksRow>
+      </ProjectRow>
+      <ProjectRow>
         <ProjectTitleStyle>Wordle</ProjectTitleStyle>
         <ProjectLinksRow>
           <ProjectLinkStyle
