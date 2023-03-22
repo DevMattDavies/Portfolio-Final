@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {
   ProjectInfoContainer,
   ProjectRow,
@@ -6,8 +5,6 @@ import {
 } from "./Containers.styles";
 import {
   ProjectLinkStyle,
-  ProjectTextStyle,
-  TextStyle,
   ProjectTitleStyle,
 } from "./TextStyles.styles";
 
@@ -31,54 +28,54 @@ export default function Projects() {
           </ProjectLinkStyle>
         </ProjectLinksRow>
       </ProjectRow>
-      <ProjectRow>
-        <ProjectTitleStyle>Wordle</ProjectTitleStyle>
-        <ProjectLinksRow>
-          <ProjectLinkStyle
-            target="_blank"
-            href="https://wordle-in-react.netlify.app"
-          >
-            URL
-          </ProjectLinkStyle>
-          <ProjectLinkStyle
-            target="_blank"
-            href="https://github.com/DevMattDavies/wordle-react"
-          >
-            Github
-          </ProjectLinkStyle>
-        </ProjectLinksRow>
-      </ProjectRow>
-      <ProjectRow>
-        <ProjectTitleStyle>1Source</ProjectTitleStyle>
-        <ProjectLinksRow>
-          <ProjectLinkStyle target="_blank" href="https://1source.netlify.app">
-            URL
-          </ProjectLinkStyle>
-          <ProjectLinkStyle
-            target="_blank"
-            href="https://github.com/SchoolOfCode/final-project_front-end-odd-socs"
-          >
-            Github
-          </ProjectLinkStyle>
-        </ProjectLinksRow>
-      </ProjectRow>
-      <ProjectRow>
-        <ProjectTitleStyle>Tip Splitter</ProjectTitleStyle>
-        <ProjectLinksRow>
-          <ProjectLinkStyle
-            target="_blank"
-            href="http://tip-calculator-devmattdavies.netlify.app"
-          >
-            URL
-          </ProjectLinkStyle>
-          <ProjectLinkStyle
-            target="_blank"
-            href="https://github.com/DevMattDavies/tip_calculator"
-          >
-            Github
-          </ProjectLinkStyle>
-        </ProjectLinksRow>
-      </ProjectRow>
+      {/*<ProjectRow>*/}
+      {/*  <ProjectTitleStyle>Wordle</ProjectTitleStyle>*/}
+      {/*  <ProjectLinksRow>*/}
+      {/*    <ProjectLinkStyle*/}
+      {/*      target="_blank"*/}
+      {/*      href="https://wordle-in-react.netlify.app"*/}
+      {/*    >*/}
+      {/*      URL*/}
+      {/*    </ProjectLinkStyle>*/}
+      {/*    <ProjectLinkStyle*/}
+      {/*      target="_blank"*/}
+      {/*      href="https://github.com/DevMattDavies/wordle-react"*/}
+      {/*    >*/}
+      {/*      Github*/}
+      {/*    </ProjectLinkStyle>*/}
+      {/*  </ProjectLinksRow>*/}
+      {/*</ProjectRow>*/}
+      {/*<ProjectRow>*/}
+      {/*  <ProjectTitleStyle>1Source</ProjectTitleStyle>*/}
+      {/*  <ProjectLinksRow>*/}
+      {/*    <ProjectLinkStyle target="_blank" href="https://1source.netlify.app">*/}
+      {/*      URL*/}
+      {/*    </ProjectLinkStyle>*/}
+      {/*    <ProjectLinkStyle*/}
+      {/*      target="_blank"*/}
+      {/*      href="https://github.com/SchoolOfCode/final-project_front-end-odd-socs"*/}
+      {/*    >*/}
+      {/*      Github*/}
+      {/*    </ProjectLinkStyle>*/}
+      {/*  </ProjectLinksRow>*/}
+      {/*</ProjectRow>*/}
+      {/*<ProjectRow>*/}
+      {/*  <ProjectTitleStyle>Tip Splitter</ProjectTitleStyle>*/}
+      {/*  <ProjectLinksRow>*/}
+      {/*    <ProjectLinkStyle*/}
+      {/*      target="_blank"*/}
+      {/*      href="http://tip-calculator-devmattdavies.netlify.app"*/}
+      {/*    >*/}
+      {/*      URL*/}
+      {/*    </ProjectLinkStyle>*/}
+      {/*    <ProjectLinkStyle*/}
+      {/*      target="_blank"*/}
+      {/*      href="https://github.com/DevMattDavies/tip_calculator"*/}
+      {/*    >*/}
+      {/*      Github*/}
+      {/*    </ProjectLinkStyle>*/}
+      {/*  </ProjectLinksRow>*/}
+      {/*</ProjectRow>*/}
       <ProjectRow>
         <ProjectTitleStyle>Portfolio V1</ProjectTitleStyle>
         <ProjectLinksRow>
@@ -110,6 +107,15 @@ export default function Projects() {
             href="https://github.com/DevMattDavies/portfolio-next-js"
           >
             Github
+          </ProjectLinkStyle>
+        </ProjectLinksRow>
+      </ProjectRow>
+      <ProjectRow>
+        <ProjectLinksRow>
+          <ProjectLinkStyle
+              href="#"
+          >
+            More projects coming soon...
           </ProjectLinkStyle>
         </ProjectLinksRow>
       </ProjectRow>
